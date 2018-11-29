@@ -6,10 +6,10 @@ var currentVideoReducer = (state = null, action) => {
 
   //takes in the previous state and returns the next state
   switch (action.type) {
-  case 'CHANGE_VIDEO':
-    return action.video;
-  default:
-    return state;
+    case 'CHANGE_VIDEO':
+      return action.video;
+    default:
+      return state;
   }
 };
 
