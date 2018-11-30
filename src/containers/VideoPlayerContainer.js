@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import VideoPlayer from '../components/VideoPlayer.js';
 import thunk from 'redux-thunk';
-import store from '../store/store.js'
+// import store from '../store/store.js'
 // import changeVideo from '../actions/currentVideo.js'
 
 const mapStateToProps = state => {
@@ -10,12 +10,15 @@ const mapStateToProps = state => {
   }
 }
 
+const mapDispatchToProps = state => {
+  return {};
+}
+
 const VideoPlayerContainer = connect(
-  mapStateToProps
+  mapStateToProps,  
+  mapDispatchToProps
 )(VideoPlayer)
 
-
-// var VideoPlayerContainer = () => {};
 
 //TODO: define a VideoPlayerContainer component which will hook up your action
 //dispatchers with your VideoPlayer component props.

@@ -3,19 +3,8 @@ import Search from './../components/Search.js';
 import { connect } from 'react-redux';
 import handleVideoSearch from '../actions/search.js';
 import thunk from 'redux-thunk';
-import store from '../store/store.js'
+// import store from '../store/store.js'
 
-// const SearchContainer = (state) => {
-//   return {
-//     video: state.video,
-//     videos: state.videos
-//   }
-// }
-
-
-// const handleSearchInputChange = (state, filter) => {
-
-// }
 const mapDispatchToProps = (dispatch) => {
   return {
     handleSearchInputChange: (url) => {

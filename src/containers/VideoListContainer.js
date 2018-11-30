@@ -2,12 +2,9 @@ import { connect } from 'react-redux';
 import changeVideo from './../actions/currentVideo.js';
 // import changeVideoList from './../actions/videoList.js';
 import thunk from 'redux-thunk';
-import store from '../store/store.js'
+// import store from '../store/store.js'
 import VideoList from './../components/VideoList.js';
 
-// const VideoListContainer = (state) => {
-  
-// };
 
 const mapDispatchToProps = (dispatch) => {
   return {
